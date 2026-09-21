@@ -1,5 +1,7 @@
-# Bank Management System - Version 1.1
-# Features: deposit and withdraw money, interest calculation
+# Bank Management System - Version 2.0
+# Features: deposit/withdraw money, interest calculation, account search
+
+accounts = ["1001", "1002", "1003"]
 
 def deposit_money(account_id, amount):
     print("Amount", amount, "deposited to account", account_id)
@@ -11,3 +13,9 @@ def calculate_interest(principal, rate=5):
     interest = principal * rate / 100
     print("Interest = Rs.", interest)
     return interest
+
+def search_account(account_id):
+    if account_id in accounts:
+        print("Account", account_id, "is available")
+    else:
+        print("Account", account_id, "not found")
