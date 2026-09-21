@@ -1,8 +1,13 @@
-# Bank Management System - Version 1.0
-# Feature: deposit and withdraw money
+# Bank Management System - Version 1.1
+# Features: deposit and withdraw money, interest calculation
 
 def deposit_money(account_id, amount):
     print("Amount", amount, "deposited to account", account_id)
 
 def withdraw_money(account_id, amount):
     print("Amount", amount, "withdrawn from account", account_id)
+
+def calculate_interest(principal, rate=5):
+    interest = principal * rate / 100
+    print("Interest = Rs.", interest)
+    return interest
