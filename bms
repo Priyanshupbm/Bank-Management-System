@@ -1,0 +1,8 @@
+# Bank Management System - Version 1.0
+# Feature: deposit and withdraw money
+
+def deposit_money(account_id, amount):
+    print("Amount", amount, "deposited to account", account_id)
+
+def withdraw_money(account_id, amount):
+    print("Amount", amount, "withdrawn from account", account_id)
